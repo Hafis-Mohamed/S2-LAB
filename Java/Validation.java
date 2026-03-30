@@ -22,7 +22,7 @@ class User{
 
     void login(String n1,String p1){
         try{
-            if(name.equals(u)&&pass.equals(p)){
+            if(name.equals(n1)&&pass.equals(p1)){
                 System.out.println("LOGIN SUCCESSFULL!!!!");
             }
             else{
@@ -68,9 +68,9 @@ public class Validation {
                 if(ch>=48&&ch<=57){
                     p=1;
                 }
-                if(p==0){
+            }   
+            if(p==0){
                     throw new passException("Password must contain at least 1 number");
-                }
             }
         }
         catch(nameException e){
